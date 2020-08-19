@@ -5,7 +5,7 @@ metadata:
 spec:
   inputs:
     resources:
-      - name: git-source
+      - name: git-repo
         type: git
     params:
       - name: pathToDockerFile
@@ -20,7 +20,7 @@ spec:
         default: /workspace/docker-source
   outputs:
     resources:
-      - name: builtImage
+      - name: image-registry
         type: image
   steps:
     - name: build-and-push
