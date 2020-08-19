@@ -2,7 +2,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
-  name: docker-target
+  name: image-registry
 spec:
   type: image
   params:
